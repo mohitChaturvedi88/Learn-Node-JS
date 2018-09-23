@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		
+	<!-- bootstrap framework -->
+	<link rel="stylesheet" href="assets/login_bootstrap/css/bootstrap.min.css">
+	<!-- google webfonts -->
+	<link  rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400&amp;subset=latin-ext,latin'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+	<link rel="stylesheet" href="assets/css/login.css" >
+	
+</head>
+<body>
+	<!-- <div class="logo_contetn login_container">
+			<img src="assets/img/logo.png">
+	</div> -->
+	<div class="login_container">
+		
+		<form id="login_form" action="http://localhost:3000/api/login" method="post">
+			<h1 class="login_heading">Login <span>/ <a href="#" class="open_register_form">forget password ?</a></span></h1>
+			<div class="form-group">
+				<label for="login_username">Email</label>
+				<div class="position-realtive">
+					<input type="text" class="form-control input-lg" placeholder="enter your username" value="User" name="emaid_id">
+					<span class="absolute_icons">
+						<i class="fa fa-envelope"></i>
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="login_password">Password</label>
+				<div class="position-realtive">
+					<input type="password" class="form-control input-lg" placeholder="enter your password" value="newpassword" name="password"> 
+					<span class="absolute_icons">
+						<i class="fa fa-envelope"></i>
+					</span>
+				</div>
+			</div>
+			<div input type="submit" class="submit_section">
+				<button class="btn btn-lg btn-login btn-block">Login</button>
+				
+			</div>
+		</form>
+		<form id="register_form" style="display:none">
+			<h1 class="login_heading">Reset Password <span>/ <a href="#" class="open_login_form">login</a></span></h1>
+			<div class="form-group">
+				<span>Enter your Registered email address and we will send you password on that</span>
+			</div> 
+			<div class="form-group">
+				<label for="register_email">Email</label>
+				<div class="position-realtive">	
+					<input type="text" class="form-control input-lg" placeholder="enter your email" id="register_email">
+					<span class="absolute_icons">
+						<i class="fa fa-envelope"></i>
+					</span>
+				</div>
+			</div>  
+			<div class="submit_section">
+				<button type="button" class="btn btn-lg btn-login btn-block">Send</button>
+			</div>
+		</form>
+	</div>
+	
+	 
+	
+	<!-- jQuery -->
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+	<!-- bootstrap js plugins -->
+	<script src="assets/login_bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$(function() {
+			// switch forms
+			$('.open_register_form').click(function(e) {
+				e.preventDefault();
+				$('#login_form').removeClass().addClass('animated fadeOutDown');
+				setTimeout(function() {
+					$('#login_form').removeClass().hide();
+					$('#register_form').show().addClass('animated fadeInUp');
+				}, 700);
+			})
+			$('.open_login_form').click(function(e) {
+				e.preventDefault();
+				$('#register_form').removeClass().addClass('animated fadeOutDown');
+				setTimeout(function() {
+					$('#register_form').removeClass().hide();
+					$('#login_form').show().addClass('animated fadeInUp');
+				}, 700);
+			})
+		})
+	</script>
+	
+	<!-- <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-65391202-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script> -->
+	
+</body>
+
+
+</html>

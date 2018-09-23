@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title><%= siteTitle%> <%= pageTitle%></title>
+   <link rel="stylesheet" href="login_assests/css/stylee.css">
+</head>
+<body>
+  <div class="login-page">
+  <div class="form">
+    <form class="register-form" action="http://localhost:3000/api/login" enctype="multipart/form-data" method="post">
+      <input type="text" placeholder="name" name ="as"/>
+      <input type="password" placeholder="password" name ="as"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form"  action="http://localhost:3000/api/login"  method="post">
+      <input type="text" placeholder="username" name="email"/>
+      <input type="password" placeholder="password" name="password"/>
+     
+      <button type="submit">login </button>
+     
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="login_assests/js/indexx.js"></script>
+</body>
+</html>

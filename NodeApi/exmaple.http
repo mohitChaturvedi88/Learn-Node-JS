@@ -1,0 +1,249 @@
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/projects HTTP/1
+
+###
+
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/projects/UPSOII HTTP/1.1
+
+
+###
+POST http://3104-h7-esri.in.niit-tech.com:3000/api/projects HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "projectcode": "ASW",
+    "projectname" : "Route verification for Goa",
+    "projecttype" : "Gas",
+    "startdate" : "12-01-2018",
+    "contactname" : "parikar",
+    "contactno": "8973344343",
+    "address" : "Goa",
+    "district" : "Goa",
+    "state" : "Goa"
+}
+
+###
+
+PUT http://3104-h7-esri.in.niit-tech.com:3000/api/projects/ASW HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "projectname" : "Route verification for Goa",
+    "projecttype" : "P",
+    "startdate" : "12-01-2018",
+    "contactname" : "parikar",
+    "contactno": "8973344343",
+    "address" : "Goa"  
+}
+
+
+###
+
+DELETE http://3104-h7-esri.in.niit-tech.com:3000/api/projects/VE123 HTTP/1.1 
+
+
+###
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/sources HTTP/1.1
+
+###
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/sources/UP761 HTTP/1.1
+
+###
+POST http://3104-h7-esri.in.niit-tech.com:3000/api/sources HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "sourcecode": "S345",
+    "sourcename" : "IOCL ",
+    "latitude" : "78.25",
+    "longitude" : "28.36",
+    "contactname" : "parikar",    
+    "contactemail" : "Goa",
+    "projectcode" : "ISD"   
+}
+
+###
+PUT http://3104-h7-esri.in.niit-tech.com:3000/api/sources/S345 HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "sourcename" : "IOCL ",
+    "latitude" : "78.25",
+    "longitude" : "28.36",
+    "contactname" : "manohar",    
+    "contactemail" : "Goa",
+    "projectcode" : "ISD"   
+}
+
+###
+DELETE http://3104-h7-esri.in.niit-tech.com:3000/api/sources/S345 HTTP/1.1
+
+###
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/destination HTTP/1.1
+
+###
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/destination/CO345 HTTP/1.1
+
+###
+POST http://3104-h7-esri.in.niit-tech.com:3000/api/destination HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "CustomerCode": "CO67",
+    "CustomerType" : "Regular",
+    "CustomerName" : "FTZ",
+    "CustomerAddress" : "parra tower",
+    "Latitude" : "77.497",    
+    "Longitude" : "28.36",
+    "District" : "North Goa",
+    "State" : "Goa",
+    "FOName" : "Kishanlal",    
+    "FOCode" : "180",
+    "ProjectCode" : "MSO"   
+}
+
+###
+PUT http://3104-h7-esri.in.niit-tech.com:3000/api/destination/CO67 HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "CustomerType" : "Regular",
+    "CustomerName" : "FTZ",
+    "CustomerAddress" : "parra",
+    "Latitude" : "77.497",    
+    "Longitude" : "28.36",
+    "District" : "North Goa",
+    "State" : "Goa",
+    "FOName" : "Kishanlal",    
+    "FOCode" : "180",
+    "ProjectCode" : "MSO"   
+}
+
+###
+DELETE http://3104-h7-esri.in.niit-tech.com:3000/api/destination/CO67 HTTP/1.1
+
+###
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/toll HTTP/1.1
+
+###
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/toll/TDGE HTTP/1.1
+
+###
+POST http://3104-h7-esri.in.niit-tech.com:3000/api/destination HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "TollID": "TNH66",
+    "TollName" : "TONG",
+    "Location" : "North Goa",
+    "Latitude" : "74.1240",
+    "Longitude" : "15.2993",    
+    "RoadName" : "NH66",
+    "District" : "North Goa",
+    "State" : "Goa",
+    "UpTo3Axle" : 874,    
+    "From4To6Axle" : 5455,
+    "From7OrMoreAxle" : 546   
+}
+
+###
+PUT http://3104-h7-esri.in.niit-tech.com:3000/api/destination/TNH66 HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "TollName" : "TONG",
+    "Location" : "North Goa NH66",
+    "Latitude" : "74.1240",
+    "Longitude" : "15.2993",    
+    "RoadName" : "NH66",
+    "District" : "North Goa",
+    "State" : "Goa",
+    "UpTo3Axle" : 874,    
+    "From4To6Axle" : 5455,
+    "From7OrMoreAxle" : 546   
+}
+
+###
+DELETE http://3104-h7-esri.in.niit-tech.com:3000/api/destination/TNH66 HTTP/1.1
+
+###
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/poi HTTP/1.1
+
+###
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/poi/POI836 HTTP/1.1
+
+###
+POST http://3104-h7-esri.in.niit-tech.com:3000/api/poi HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "POIName": "POIMA",
+    "Latitude" : "74.1240",
+    "Longitude" : "15.29",
+    "Category" : "Gas"  
+}
+
+###
+PUT http://3104-h7-esri.in.niit-tech.com:3000/api/poi/POIMA HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "Latitude" : "74.1240",
+    "Longitude" : "15.29",
+    "Category" : "Petroleum"  
+}
+
+###
+DELETE http://3104-h7-esri.in.niit-tech.com:3000/api/poi/POIMA HTTP/1.1
+
+###
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/user HTTP/1.1
+
+###
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/user/Manjari HTTP/1.1
+
+###
+POST http://3104-h7-esri.in.niit-tech.com:3000/api/user HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "UserName": "Ankit",
+    "ProjectCode" : "MSO"
+}
+
+###
+PUT http://3104-h7-esri.in.niit-tech.com:3000/api/user/Ankit HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "ProjectCode" : "UPSOII"
+}
+
+###
+DELETE http://3104-h7-esri.in.niit-tech.com:3000/api/user/Ankit HTTP/1.1
+
+###
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/product HTTP/1.1
+
+###
+GET http://3104-h7-esri.in.niit-tech.com:3000/api/product/1 HTTP/1.1
+
+###
+POST http://3104-h7-esri.in.niit-tech.com:3000/api/product HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "ProjectType": "Crude oil",
+    "CustomerType" : "RO"
+}
+
+###
+PUT http://3104-h7-esri.in.niit-tech.com:3000/api/product/7 HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "ProjectType": "Crude oil",
+    "CustomerType" : "CO"
+}
+
+###
+DELETE http://3104-h7-esri.in.niit-tech.com:3000/api/product/7 HTTP/1.1
